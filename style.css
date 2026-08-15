@@ -283,7 +283,11 @@ section {
 .project-links a:hover { color: #fff; }
 
 /* ── SKILLS ── */
-#skills { background: var(--surface); border-radius: 1rem; margin: 0 auto 2rem auto; }
+#skills { 
+  background: var(--surface); 
+  border-radius: 1rem; 
+  margin-bottom: 2rem;
+}
 
 .skills-grid {
   display: grid;
@@ -556,7 +560,8 @@ footer {
 /* ── ACHIEVEMENTS ── */
 #achievements { 
   background: var(--surface); 
-  border-radius: 1rem; 
+  border-radius: 1rem;
+  margin-bottom: 2rem;
 }
 
 .achievements-grid {
