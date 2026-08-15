@@ -559,9 +559,7 @@ footer {
 
 /* ── ACHIEVEMENTS ── */
 #achievements { 
-  background: var(--surface); 
-  border-radius: 1rem;
-  margin-bottom: 2rem;
+  background: var(--bg);
 }
 
 .achievements-grid {
