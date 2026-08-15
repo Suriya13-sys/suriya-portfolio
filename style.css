@@ -558,7 +558,7 @@ footer {
 
 .achievements-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -568,8 +568,8 @@ footer {
   border-radius: 0.75rem;
   padding: 1.5rem;
   display: flex;
-  gap: 1.2rem;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.8rem;
   transition: border-color 0.25s, transform 0.25s;
 }
 .achievement-card:hover {
@@ -577,8 +577,14 @@ footer {
   transform: translateY(-3px);
 }
 
+.achievement-top {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
 .achievement-icon {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   flex-shrink: 0;
 }
 
@@ -586,7 +592,6 @@ footer {
   font-family: var(--serif);
   font-size: 1rem;
   color: var(--text);
-  margin-bottom: 0.5rem;
 }
 
 .achievement-card p {
