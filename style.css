@@ -1,16 +1,17 @@
 /* ── TOKENS ── */
 :root {
-  --bg:        #1b1e2f;
-  --surface:   #242f49;
-  --surface2:  #384358;
-  --border:    #384358;
-  --text:      #ffa586;
-  --muted:     #c4957a;
-  --accent:    #b51a2b;
-  --accent2:   #ffa586;
+  --bg:        #0a0e1a;
+  --surface:   #111827;
+  --surface2:  #1a2236;
+  --border:    #2a3550;
+  --text:      #ffffff;
+  --muted:     #8892a4;
+  --accent:    #4f8ef7;
+  --accent2:   #7eb8f7;
   --serif:     'Playfair Display', Georgia, serif;
   --sans:      'Inter', system-ui, sans-serif;
 }
+
 /* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -161,7 +162,7 @@ section {
   display: inline-block;
 }
 .btn-primary:hover {
-  background: #541a2e;
+  background: #3a7ae0;
   transform: translateY(-2px);
 }
 
