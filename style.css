@@ -1,17 +1,16 @@
 /* ── TOKENS ── */
 :root {
-  --bg:        #0e0e0e;
-  --surface:   #161616;
-  --surface2:  #1f1f1f;
-  --border:    #2a2a2a;
-  --text:      #e8e8e8;
-  --muted:     #888;
-  --accent:    #e06c3a;
-  --accent2:   #3a9e7e;
+  --bg:        #1b1e2f;
+  --surface:   #242f49;
+  --surface2:  #384358;
+  --border:    #384358;
+  --text:      #ffa586;
+  --muted:     #c4957a;
+  --accent:    #b51a2b;
+  --accent2:   #ffa586;
   --serif:     'Playfair Display', Georgia, serif;
   --sans:      'Inter', system-ui, sans-serif;
 }
-
 /* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -23,6 +22,19 @@ body {
   line-height: 1.7;
   font-size: 16px;
   overflow-x: hidden;
+}
+
+#bg-canvas {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+section, nav, footer {
+  position: relative;
+  z-index: 1;
 }
 
 h1, h2, h3 { font-family: var(--serif); line-height: 1.2; }
@@ -149,7 +161,7 @@ section {
   display: inline-block;
 }
 .btn-primary:hover {
-  background: #c85a2a;
+  background: #541a2e;
   transform: translateY(-2px);
 }
 
@@ -328,6 +340,7 @@ section {
   transition: background 0.2s, border-color 0.2s;
   cursor: default;
 }
+
 .skill-tags span:hover {
   background: var(--accent);
   border-color: var(--accent);
