@@ -484,3 +484,112 @@ footer {
   }
 
 }
+
+/* ── EXPERIENCE ── */
+#experience { background: var(--bg); }
+
+.experience-list { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.exp-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1.8rem;
+  transition: border-color 0.25s, transform 0.25s;
+}
+.exp-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.exp-header h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.exp-org {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-top: 0.2rem;
+}
+
+.exp-date {
+  font-size: 0.78rem;
+  color: var(--muted);
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+  padding: 0.25rem 0.7rem;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  flex-shrink: 0;
+}
+
+.exp-supervisor {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.exp-bullets {
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.exp-bullets li {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ── ACHIEVEMENTS ── */
+#achievements { background: var(--surface); border-radius: 1rem; }
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.achievement-card {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1.2rem;
+  align-items: flex-start;
+  transition: border-color 0.25s, transform 0.25s;
+}
+.achievement-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.achievement-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+}
+
+.achievement-card h3 {
+  font-family: var(--serif);
+  font-size: 1rem;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.achievement-card p {
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
